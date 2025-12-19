@@ -1,30 +1,31 @@
 # ☀️ Smart Blinds IoT Monitoring System
 
-This project is an interactive Streamlit dashboard designed to monitor IoT sensor
-data related to light intensity and temperature. The system helps in controlling
-smart blinds automatically to improve comfort and energy efficiency.
+An interactive **Streamlit dashboard** for monitoring IoT sensor data related to
+**light intensity** and **temperature**, designed to support intelligent control
+of smart blinds for improved comfort and energy efficiency.
 
 ---
 
 ## 📌 Project Objectives
-- Monitor environmental conditions using IoT sensors
+- Monitor environmental conditions using IoT sensor data
 - Analyze the relationship between light intensity and temperature
 - Display the current status of smart blinds (Open / Closed)
-- Provide interactive visualizations for better decision making
+- Provide interactive visualizations for better decision-making
 
 ---
 
 ## 🛠️ Technologies Used
 - **Python**
-- **Streamlit** – for building the dashboard
-- **Pandas** – for data processing
-- **Plotly** – for interactive charts
-- **OpenPyXL** – for reading Excel files
+- **Streamlit** – dashboard and UI
+- **Pandas** – data processing
+- **Plotly** – interactive charts
+- **Scikit-learn** – simple prediction model
+- **OpenPyXL** – reading Excel files
 
 ---
 
 ## 📂 Project Structure
-smart-blinds-dashboard/
+Smart-Blinds-Dashboard/
 │
 ├── app.py
 ├── requirements.txt
@@ -32,21 +33,28 @@ smart-blinds-dashboard/
 └── data/
 └── iot final.xlsx
 
-
 ---
 
 ## ▶️ How to Run the Project Locally
 
-1. Install the required libraries:
+### 1️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
 
+2️⃣ Run the Streamlit app
 
-Run the Streamlit app:
 streamlit run app.py
 
-Open the browser and go to:
-http://16.170.225.196:8501
+3️⃣ Open in browser
+
+http://localhost:8501
+
+
+🌐 Live Deployment (AWS EC2)
+
+The application can be deployed on AWS EC2 and accessed via:
+
+http://<EC2_PUBLIC_IP>:8501
 
 
 📊 Dataset Description
@@ -62,12 +70,35 @@ Light Intensity (Lux) – measured light level
 Blind Status – current state of the blinds (Open / Closed)
 
 
-## ✅ Results
+✅ Results
+
 The dashboard provides:
-- Real-time KPI indicators
-- Interactive time-series plots
-- Data filtering by date
-- Clear visualization of blind status
+
+Interactive time-series analysis
+
+Relationship visualization between temperature and light
+
+Blind status filtering
+
+Baseline temperature prediction from light intensity
+
+Clear insights to support smart blind automation
 
 
+🚀 Future Improvements
+
+Real-time sensor data integration (MQTT / API)
+
+Advanced ML models for blind automation
+
+User authentication
+
+Mobile-friendly UI
+
+
+👤 Author
+
+ِAbdulrahman Almaamari
+
+IoT & Data Visualization Project
 
