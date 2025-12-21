@@ -102,6 +102,8 @@ Mobile-friendly UI
 👤 Author
 
 ِAbdulrahman Almaamari
+Sam Almahdi
+Mogdam Hayder
 
 IoT & Data Visualization Project
 
